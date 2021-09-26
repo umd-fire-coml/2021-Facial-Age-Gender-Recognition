@@ -12,3 +12,4 @@ dependencies:
   - pip:
     - segmentation-models
     - albumentations
+    - requests
