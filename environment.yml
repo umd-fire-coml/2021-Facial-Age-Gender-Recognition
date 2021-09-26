@@ -2,13 +2,14 @@ name: face-recognition
 dependencies:
   - python=3.9.0
   - tensorflow=2.6.0
-  - opencv
+  - opencv-contrib-python
   - matplotlib
   - pip
   - numpy
   - pandas
   - scikit-learn
   - keras
+  - os_sys
   - pip:
     - segmentation-models
     - albumentations
