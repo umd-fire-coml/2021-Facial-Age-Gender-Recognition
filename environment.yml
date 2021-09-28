@@ -1,7 +1,6 @@
-name: face-recognition
+name: face-age-gender-recognition
 dependencies:
-  - python=3.9.0
-  - tensorflow=2.6.0
+  - tensorflow
   - opencv
   - matplotlib
   - pip
@@ -10,5 +9,4 @@ dependencies:
   - scikit-learn
   - keras
   - pip:
-    - segmentation-models
-    - albumentations
+    - requests
