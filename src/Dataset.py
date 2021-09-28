@@ -1,21 +1,34 @@
 import requests
 import os
 import tarfile
+import sys
 from os import path
 
-directory = 'dataset'
+link = "https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/static/imdb_0.tar"
+file_name = "dataset.tar"
 
-if not (path.exists(directory)):
-    os.mkdir(directory)
+with open('dataset.tar', 'wb') as f:
+    print("Downloading %s" % file_name)
+    response = requests.get(link, stream=True)
+    total_length = response.headers.get('content-length')
 
-r = requests.get('https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/static/imdb_0.tar')  
-with open('dataset/dataset.tar', 'wb') as f:
-    f.write(r.content)
+    if total_length is None: # no content length header
+        f.write(response.content)
+    else:
+        dl = 0
+        total_length = int(total_length)
+        for data in response.iter_content(chunk_size=4096):
+            dl += len(data)
+            f.write(data)
+            done = int(50 * dl / total_length)
+            sys.stdout.write("\r[%s%s]" % ('=' * done, ' ' * (50-done)) )    
+            sys.stdout.flush()
 
-my_tar = tarfile.open(dataset.tar.gz)
+my_tar = tarfile.open(file_name)
 my_tar.extractall()
 my_tar.close
- 
+os.remove(file_name)
+
 if r:
     print('Success!')
 else:
