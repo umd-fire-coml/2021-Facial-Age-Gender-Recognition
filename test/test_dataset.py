@@ -10,4 +10,4 @@ def test_folder_present():
     parent = os.path.dirname(path)
     os.path.join(parent)
     os.path.join('src')
-    assert not (os.listdir('wiki_crop'))
+    assert (len(os.listdir('wiki_crop'))!=0)
