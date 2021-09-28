@@ -27,4 +27,7 @@ def verify_env():
         print("All installed!")
         return True
     else:
-        return False
+        return False 
+
+def test_verify_env():
+    assert(verify_env() == True)
