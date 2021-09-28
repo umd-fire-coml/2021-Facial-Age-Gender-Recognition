@@ -1,7 +1,6 @@
 import sys
 import os
 from os import path
-sys.path.append('/2021-Facial-Age-Gender-Recognition/src')
 from src.dataset import Downloader
 
 path = os.getcwd()
