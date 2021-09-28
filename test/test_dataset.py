@@ -1,7 +1,7 @@
 import sys
 import os
 from os import path
-from src.dataset import Downloader
+from src.Dataset import Downloader
 
 path = os.getcwd()
 parent = os.path.dirname(path)
