@@ -3,15 +3,14 @@ from os import path
 
 path = os.getcwd()
 parent = os.path.dirname(path)
-path_of_imdb = os.path.dirname('imdb')
 
 os.path.join(parent)
-os.path.join(os.path.join)
+os.path.join('src')
 
 def folder_present():
-    if not (os.listdir('imdb')):
-        print('Fail')
+    if (os.path.exists('dataset.tar')):
+        print("Fail")
         return (False)
     else:
-        print('Success')
+        print("Success")
         return (True)

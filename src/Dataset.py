@@ -29,7 +29,7 @@ my_tar.extractall()
 my_tar.close
 os.remove(file_name)
 
-if r:
-    print('Success!')
+if response:
+    print("Success!")
 else:
-    print('An error has occurred.')
+    print("An error has occurred.")
