@@ -22,5 +22,12 @@ def verify_env():
             isPkgInstalled = False
         if isPkgInstalled is False:
             print(f"{package} is not installed!")
-            
-    assert(is_pkgs_installed == True)
+    
+    if is_pkgs_installed is True:
+        print("All installed!")
+        return True
+    else:
+        return False 
+
+def test_verify_env():
+    assert(verify_env() == True)
