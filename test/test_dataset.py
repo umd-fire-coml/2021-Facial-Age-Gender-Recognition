@@ -1,9 +1,8 @@
 import sys
 import os
 from os import path
-
-from src.dataset import Downloader   
-
+sys.path.append('/2021-Facial-Age-Gender-Recognition/src')
+from src.dataset import Downloader
 
 path = os.getcwd()
 parent = os.path.dirname(path)
