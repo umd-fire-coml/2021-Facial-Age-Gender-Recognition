@@ -7,6 +7,7 @@ def test_jpg():
 
 def test_numfiles(): 
     assert bool(check_files()) != False
+
 if __name__ == "__main__":
     test_jpg()
     test_numfiles()
