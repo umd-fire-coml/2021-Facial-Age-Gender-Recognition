@@ -1,6 +1,7 @@
 import os 
 from filescript import check_files, check_jpg
 
+# they should return false on remote because the file path is not specified 
 def test_jpg():
     assert bool(check_jpg()) != False
 
