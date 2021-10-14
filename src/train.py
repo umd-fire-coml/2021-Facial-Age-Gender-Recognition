@@ -3,6 +3,8 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
+
+# I think below code is bogus and needs to change, not sure tho
 # Create a simple dataset
 class MyDataset(object):
     def __init__(self):
@@ -31,3 +33,37 @@ def my_model():
     return keras.Model(inputs=inputs, outputs=outputs)
 
 # complete the training script below
+
+# instantiate generator after it goes to main
+
+my_model.compile(
+    optimizer=keras.optimizers.RMSprop(),  # Optimizer
+    # Loss function to minimize
+    loss=keras.losses.SparseCategoricalCrossentropy(),
+    # List of metrics to monitor
+    metrics=[keras.metrics.SparseCategoricalAccuracy()],
+)
+
+print("Fit model on training data")
+history = my_model.fit(
+    MyDataset.x_train,
+    MyDataset.y_train,
+    batch_size=64,
+    epochs=2,
+    # We pass some validation for
+    # monitoring validation loss and metrics
+    # at the end of each epoch
+    validation_data=(MyDataset.x_val, MyDataset.y_val),
+)
+
+
+# Evaluate the model on the test data using `evaluate`
+print("Evaluate on test data")
+results = my_model.evaluate(MyDataset.x_test, MyDataset.y_test, batch_size=128)
+print("test loss, test acc:", results)
+
+# Generate predictions (probabilities -- the output of the last layer)
+# on new data using `predict`
+print("Generate predictions for 3 samples")
+predictions = my_model.predict(MyDataset.x_test[:3])
+print("predictions shape:", predictions.shape)
