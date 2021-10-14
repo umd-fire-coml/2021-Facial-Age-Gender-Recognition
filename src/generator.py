@@ -7,7 +7,7 @@ import os
 class DataGenerator(Sequence):
     '''this is a random data generator, edit this data generator to read data from dataset folder and return a batch with __getitem__'''
 
-    def __init__(self, batch_size=100, x_shape=(485, 329, 3), y_shape=(1,), n_dataset_items=46652):
+    def __init__(self, batch_size=1000, x_shape=(485, 329, 3), y_shape=(1,), n_dataset_items=46652):
         self.batch_size = batch_size
         self.x_shape = x_shape
         self.y_shape = y_shape
