@@ -4,7 +4,7 @@ from tensorflow import keras
 from tensorflow.keras import layers
 
 
-# I think below code is bogus and needs to change, not sure tho
+# After the generator is available it needs to go here 
 # Create a simple dataset
 class MyDataset(object):
     def __init__(self):
@@ -34,8 +34,6 @@ def my_model():
 
 # complete the training script below
 
-# instantiate generator after it goes to main
-
 my_model.compile(
     optimizer=keras.optimizers.RMSprop(),  # Optimizer
     # Loss function to minimize
@@ -43,6 +41,8 @@ my_model.compile(
     # List of metrics to monitor
     metrics=[keras.metrics.SparseCategoricalAccuracy()],
 )
+
+# make dataset
 
 print("Fit model on training data")
 history = my_model.fit(
