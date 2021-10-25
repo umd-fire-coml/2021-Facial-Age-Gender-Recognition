@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Data Directory
-src/imdb
+imdb
