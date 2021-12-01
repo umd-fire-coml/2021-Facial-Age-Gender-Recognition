@@ -97,3 +97,7 @@
 
     For testing purposes. To help run pytest. Can create your own
     test to check whether a file or script is working correct
+
+## References
+
+    Rasmus Rothe, Radu Timofte, Luc Van Gool, "Deep expectation of real and apparent age from a single image without facial landmarks," *International Journal of Computer Vision*, vol. 126, no. 2-4, p. 144-157, 2018. Available: https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.
