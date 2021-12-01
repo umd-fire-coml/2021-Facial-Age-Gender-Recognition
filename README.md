@@ -49,7 +49,7 @@ for a high-level walkthrough
 
 **cache.csv**
 
-  Contains filepath, age, and gender of each image.
+    Contains filepath, age, and gender of each image.
 
 **filescript.py**
 
@@ -63,35 +63,35 @@ for a high-level walkthrough
 
 **main.py**
 
-  Run main.py to call download script from Dataset.py
+    Run main.py to call download script from Dataset.py
 
 **wiki.mat**
 
-  Contains metadata of images (age, gender, etc.)
+    Contains metadata of images (age, gender, etc.)
 
 **test_dataset.py**
 
-  Checks if correct dataset is downloaded 
+    Checks if correct dataset is downloaded 
 
 **test_env.py**
 
-  Checks if all necessarily requirements are installed.
+    Checks if all necessarily requirements are installed.
 
 **test_filescript.py**
 
-  Tests if the data is downloaded properly and in correct file
-  order
+    Tests if the data is downloaded properly and in correct file
+    order
 
 **.gitignore**
 
-  For purpose of controlling what gets pushed to github. Excludes
-  dataset as it is very large.
+    For purpose of controlling what gets pushed to github. Excludes
+    dataset as it is very large.
 
 **requirements.txt**
 
-  Contains a list of the necessary enviroment requirements needed.
+    Contains a list of the necessary enviroment requirements needed.
 
 **test-requirements.txt**
 
-  For testing purposes. To help run pytest. Can create your own
-  test to check whether a file or script is working correct
+    For testing purposes. To help run pytest. Can create your own
+    test to check whether a file or script is working correct
