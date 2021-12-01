@@ -1,51 +1,51 @@
 **2021-Facial-Age-Gender-Recognition**
 
-The product predicts the face and gender of a person.
-The use of age and gender recognition has a myriad of
-applications including, security and the advertising industry.
+    The product predicts the face and gender of a person.
+    The use of age and gender recognition has a myriad of
+    applications including, security and the advertising industry.
 
-Machine learning facial age and gender recognition uses a model
-trained with a dataset of images to predict one's age and gender.
-Our model uses a series of convolutional layers to extract and learn
-information for better predictions. By training the model, we are
-able to make is more accurate as it gets more and more data to
-analyze age and gender. 
+    Machine learning facial age and gender recognition uses a model
+    trained with a dataset of images to predict one's age and gender.
+    Our model uses a series of convolutional layers to extract and learn
+    information for better predictions. By training the model, we are
+    able to make is more accurate as it gets more and more data to
+    analyze age and gender. 
 
-Learn more about this project by watching our demonstration video
-for a high-level walkthrough 
+    Learn more about this project by watching our demonstration video
+    for a high-level walkthrough 
 
 **How to download the dataset**
 
-  Run the Dataset.py script. This will download, unzip, and
-  store the images in the desired file structure.
+    Run the Dataset.py script. This will download, unzip, and
+    store the images in the desired file structure.
 
 **Environment**
 
-  The following packages are required to use this project: 
-  tensorflow=2.6.0, scikit-learn(=1.0), requests(=2.26.0),
-  pip(=21.2.4), pandas=(1.3.3), opencv-python(=4.5.3.56),
-  matplotlib(=3.4.3), numpy(=1.19.5), keras(=2.6.0).
-  The convention is to pip install evnironment requirements through
-  creating a requirements.txt that lists each of the packages and
-  then go a quick and simple pip install using the file.
+    The following packages are required to use this project: 
+    tensorflow=2.6.0, scikit-learn(=1.0), requests(=2.26.0),
+    pip(=21.2.4), pandas=(1.3.3), opencv-python(=4.5.3.56),
+    matplotlib(=3.4.3), numpy(=1.19.5), keras(=2.6.0).
+    The convention is to pip install evnironment requirements through
+    creating a requirements.txt that lists each of the packages and
+    then go a quick and simple pip install using the file.
 
 **imdb/**
 
-  This directory contains the dataset
+    This directory contains the dataset
 
 **Dataset.py**
 
-  Script that downloads, unzips, and
-  assembles the dataset in the desired file structure.
+    Script that downloads, unzips, and
+    assembles the dataset in the desired file structure.
 
 **backbone.py**
 
-  Our model.
+    Our model.
 
 **build_cache.m**
 
-  Matlab file that uses wiki.mat to extract the
-  age and gender metadata and filepaths into a csv.
+    Matlab file that uses wiki.mat to extract the
+    age and gender metadata and filepaths into a csv.
 
 **cache.csv**
 
@@ -57,9 +57,9 @@ for a high-level walkthrough
 
 **generator.py**
 
-  Reads csv as an array metadata. x_filepaths contains the
-  full relative path (which will be used to load images) and
-  the y_labels will contain the age and gender.
+    Reads csv as an array metadata. x_filepaths contains the
+    full relative path (which will be used to load images) and
+    the y_labels will contain the age and gender.
 
 **main.py**
 
