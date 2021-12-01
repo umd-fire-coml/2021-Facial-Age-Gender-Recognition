@@ -53,7 +53,7 @@ for a high-level walkthrough
 
 **filescript.py**
 
-  Checks if all files are present.
+    Checks if all files are present.
 
 **generator.py**
 
