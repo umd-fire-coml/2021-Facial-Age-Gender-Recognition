@@ -19,6 +19,14 @@
 ## Interactive Notebook and Demonstration Video
     Here is the interactive notebook: https://colab.research.google.com/drive/11n9RuOZSQNjG7u2pkdJq4DnSOZha2HQz.
 
+**Training**
+
+    Type Here
+
+**Testing**
+
+    Type Here
+
 **How to download the dataset**
 
     Run the Dataset.py script. This will download, unzip, and
