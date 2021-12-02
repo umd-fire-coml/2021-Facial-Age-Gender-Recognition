@@ -17,7 +17,7 @@
     for a high-level walkthrough 
 
 ## Interactive Notebook and Demonstration Video
-    Here is the [interactive notebook](https://colab.research.google.com/drive/11n9RuOZSQNjG7u2pkdJq4DnSOZha2HQz).
+    Here is the [interactive notebook](https://colab.research.google.com).
 
 **How to download the dataset**
 
