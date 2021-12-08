@@ -17,15 +17,16 @@
     for a high-level walkthrough 
 
 ## Interactive Notebook and Demonstration Video
-    Here is the interactive notebook: https://colab.research.google.com/drive/11n9RuOZSQNjG7u2pkdJq4DnSOZha2HQz.
+    Here is the interactive notebook: https://colab.research.google.com/drive/11n9RuOZSQNjG7u2pkdJq4DnSOZha2HQz?usp=sharing.
 
 **Training**
 
-    Type Here
+    In order to have the age and gender stored in the list, the variable labels_f is used. Using sklearn, the data is split into train and test. We import train_test_split from sklearn. After getting the train models, we create a Convolutional layer. The model itself takes in input shape 
+    which would be the image. Then Model.summary() is returned. 
 
 **Testing**
 
-    Type Here
+    The method test_image takes in input the model we trained, and the image as well as the pixels in order to return the predictions. We use the method test_image to plot the image, where we have 2 labels one being the "Predicted Age" and "Predicted Sex". The image is also plotted with the predicted age and sex returned. 
 
 **How to download the dataset**
 
