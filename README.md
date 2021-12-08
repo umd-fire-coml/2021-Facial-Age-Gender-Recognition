@@ -19,6 +19,8 @@
 ## Interactive Notebook and Demonstration Video
     Here is the interactive notebook: https://colab.research.google.com/drive/11n9RuOZSQNjG7u2pkdJq4DnSOZha2HQz?usp=sharing.
 
+    Here is the video: https://youtu.be/ouW145ZnGCY.
+
 **Training**
 
     In order to have the age and gender stored in the list, the variable labels_f is used. Using sklearn, the data is split into train and test. We import train_test_split from sklearn. After getting the train models, we create a Convolutional layer. The model itself takes in input shape 
